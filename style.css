@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+PL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nabla&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+PL:wght@100..400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+PL:wght@100..400&display=swap');
+
+/* Estilos gerais */
+body {
+    background-color: #f9fcf5;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+header {
+    width: 100%;
+    background-color: #1b263b;
+    color: #ffff;
+    font-family: "Playwrite NG Modern", cursive;
+    -webkit-box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    -moz-box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 30px; /* Adiciona espaço entre os blocos */
+}
+
+.filter-section {
+    display: inline-block;
+}
+
+.font-control {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4172cc;
+    color: #ffff;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    margin-left: 10px; /* Espaço entre os círculos e o seletor de filtro */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor */
+}
+
+.font-control:hover {
+    background-color: #bfd5ff; /* Muda a cor do círculo quando o mouse passa por cima */
+}
+
+.blocos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adiciona espaço entre os blocos superiores e inferiores */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.bloco1, .bloco2 {
+    text-align: center;
+    border: 2px solid #415A77;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    width: 1200px;
+    height: 200px;
+}
+
+.form-container {
+    border: 2px solid #415A77;
+    padding: 20px;
+    width: 94%;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.form-container::before {
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+}
+
+.question-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.question {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.question p {
+    margin: 0;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.question input[type="radio"] {
+    display: none;
+}
+
+.question span {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #9d9d9e;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 140px;
+}
+
+.question input[type="radio"]:checked + span {
+    opacity: 0.5;
+    background-color: #2980b9;
+    color: #fff;
+    border-color: #2980b9;
+}
+
+.submit-btn {
+    background-color: #2c3e50;
+    width: 125px;
+    height: 45px;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.submit-btn:hover {
+    background-color: #0e1e2c;
+    color: #c8d9e7;
+}
+
+.separator {
+    border: none;
+    height: 2px;
+    background-color: #000;
+    margin: 20px 0;
+}
+
+
+  .error {
+    border-color: #e74c3c; /* Cor vermelha para a borda */
+  }
+
+.filter-image.achromatomaly {
+    filter: grayscale(100%);
+}
+ 
+.filter-image.deuteranomaly {
+    filter: hue-rotate(180deg);
+}
+ 
+.filter-image.tritanomaly {
+    filter: sepia(100%) saturate(300%) hue-rotate(-50deg);
+}
+ 
+.filter-image.acromatomy {
+    filter: grayscale(55%);
+}
+ 
+.filter-image.deuteranopy {
+    filter: hue-rotate(100deg) saturate(100%);
+}
+ 
+.filter-image.protanopy {
+    filter: sepia(35%) saturate(100%);
+}

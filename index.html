@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Html e Css</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1header"> Html e Css</h1>
+        <div class="filter-section">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="deuteranomaly">Deuteranomalia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+                <option value="acromatomy">Acromatomia</option>
+                <option value="deuteranopy">Deuteranopia</option>
+                <option value="protanopy">Protanopia</option>
+            </select>
+            <button class="font-control" id="increase-font">A+</button>
+            <button class="font-control" id="decrease-font">A-</button>
+        </div>
+    </header>
+
+    <div class="blocos">
+        <div class="bloco1">
+            <img src="img1.jpg" alt="Descrição da imagem 1" class="blk filter-image" width="100">
+            <p>texto.</p>
+        </div>
+        <div class="bloco2">
+            <img src="img2.jpg" alt="Descrição da imagem 2" class="blk filter-image" width="300">
+            <p>texto.</p>
+        </div>
+    </div>
+    <br>
+
+    <div class="form-container">
+        <form id="myForm" action="pagina-de-destino.html" method="POST">
+
+            <div class="question-group">
+                <div class="question">
+                    <p>Pergunta 1: O HTML5 introduziu a semântica de elementos como 'header', 'footer', 'article' e 'section' para melhor estruturar o conteúdo das páginas web.</p>
+                    <label>
+                        <input type="radio" name="pergunta1" value="verdadeiro">
+                        <span>Verdadeiro</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="pergunta1" value="falso">
+                        <span>Falso</span>
+                    </label>
+                </div>
+                <hr class="separator">
+                <div class="question">
+                    <p>Pergunta 2: O CSS é utilizado para definir o estilo e a apresentação de elementos HTML em uma página web.</p>
+                    <label>
+                        <input type="radio" name="pergunta2" value="verdadeiro">
+                        <span>Verdadeiro</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="pergunta2" value="falso">
+                        <span>Falso</span>
+                    </label>
+                </div>
+                <hr class="separator">
+                <div class="question">
+                    <p>Pergunta 3: A propriedade `display` do CSS pode ser usada para alterar a cor de fundo de um elemento HTML.</p>
+                    <label>
+                        <input type="radio" name="pergunta3" value="verdadeiro">
+                        <span>Verdadeiro</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="pergunta3" value="falso">
+                        <span>Falso</span>
+                    </label>
+                </div>
+                <hr class="separator">
+                <div class="question">
+                    <p>Pergunta 4: O HTML pode ser usado para animações complexas e interações dinâmicas em uma página web.</p>
+                    <label>
+                        <input type="radio" name="pergunta4" value="verdadeiro">
+                        <span>Verdadeiro</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="pergunta4" value="falso">
+                        <span>Falso</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="validarForm()">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Início do código do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
